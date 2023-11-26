@@ -11,11 +11,16 @@ public class RelativeLocatorTest {
 		// TODO Auto-generated method stub
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://automationbookstore.dev/");
-		String strid= driver.findElement(with(By.tagName("li"))
-				.toLeftOf(By.id("pid6"))
-				.below(By.id("pid1")))
-				.getAttribute("id");
-		System.out.println(strid);
+//		String strid= driver.findElement(with(By.tagName("li"))
+//				.toLeftOf(By.id("pid6"))
+//				.below(By.id("pid1")))
+//				.getAttribute("id");
+		
+		String stid=driver.findElement(with(By.tagName("li"))
+				.toRightOf(By.id("pid1"))
+				.above(By.id("pid5")))
+		.getAttribute("id");
+	System.out.println(stid);
 				
 
 	}}

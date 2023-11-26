@@ -20,6 +20,9 @@ public class MouseActionsTest {
 //		driver.get("https://demo.opencart.com/");
 //		WebElement searchbox = driver.findElement(By.name("search"));
 //		actions.contextClick(searchbox).perform();
+		
+		
+		
 		driver.get("https://stqatools.com/demo/DoubleClick.php");
 		Thread.sleep(5000);
 		WebElement button = driver.findElement(By.xpath("//button[contains(text(),'Click Me / Double Click Me!')]"));
